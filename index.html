@@ -5,14 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Magic of Mapbox</title>
 
+  <!-- Animate a point along a route -->
+  <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v2.0.0/turf.min.js" charset="utf-8"></script>
   <!-- Mapxbox -->
   <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
   <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
+  <!-- Geocoder -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
+  <link rel="stylesheet"
+    href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css" type="text/css" />
   <!-- Style -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div id='map'></div>
+  <div class="container">
+    <h1>Sailing across the Pacific Ocean in 2016</h1>
+    <p>For 9 months my husaband and I sailed across the Pacific Ocean and visited many islands.</p>
+    <div id='map'></div>
+  </div>
 
   <!-- JavaScript -->
   <script type="text/javascript" src="app.js"></script>
